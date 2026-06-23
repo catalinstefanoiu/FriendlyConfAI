@@ -69,7 +69,8 @@ const ChatPage = () => {
           id: doc.id,
           // TODO: 2. Replace code next line with this:
           // ...prepareMessage(doc.data()),
-          ...doc.data(),
+          // ...doc.data(),
+          ...prepareMessage(doc.data()),
         }));
         console.log(
           "Message doc changes: ",
